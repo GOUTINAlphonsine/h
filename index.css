@@ -202,14 +202,16 @@ h3{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 35px;
 }
 
 .petit:hover{
     transform: translateY(-5px);
 }
 .petit img {
-    width: 250px;
+    width: 210px;
     margin-bottom: 10px;
+
 }
 
 
@@ -354,6 +356,12 @@ header.scrolled {
     background-color: dodgerblue;
 }
 
+
+
+header.scrolled .small_menu span div{
+    background-color: whitesmoke;
+    
+}
 header.scrolled .logo,
 header.scrolled .lis li a,
 header.scrolled .num {
@@ -399,14 +407,18 @@ header.scrolled .num {
         height: fit-content;
     }
 
+  
     .sec2 .image2 img {
          position: relative;
          margin-top: 130px;
-         margin-left: 100px;
+         margin-left: 87px;
          height: 200px;
          width: 200px;
+
     }
 
+
+    
     .projet .petit {
         width: 100%;
     }
