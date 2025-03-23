@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="name">GOUTIN <span>Alphonsine</span></h1>
+        <ul class="lis">
+            <li><a href="#Acceuil">Acceuil</a></li>
+            <li> <a href="#A propos">A propos</a></li>
+            <li> <a href="#Projets">Projet</a></li>
+            <li><a href="#Compétences">Compétences</a></li>
+            <li> <a href="#Contactes"> Contactes</a></li>
+        </ul>
+        <div class="num">
+            <p>+229 0147065145</p>
+        </div>
+
+      <div class="small_menu">
+        <span>
+            <div></div>
+            <div></div>
+        </span>
+
+        <span>
+            <div></div>
+            <div></div>
+        </span>
+
+      </div>
+
+    </header>
+     <section class="sec" id="Acceuil">
+        <div class="p">
+           <h2>Je suis <span>Alphonsine</span>,Développeur en devenir<br> 
+            passionné par le web et le design!</h2>
+           <button class="bouton" ><a href="#Projets">Voir mes projets</a></button>
+        </div>
+        <div class="image"><img src="image1.jpg" alt=""></div> 
+
+     </section>
+
+
+
+     <h3 id="A propos" style="text-align: center; color: dodgerblue;">A propos</h3> 
+     <section class="sec2">
+         
+         <div class="p2">
+            <p>Je m'appelle <span>GOUTIN</span>,passionné par la <br>
+            création de site web modernes et interactifs</p> <br>
+         
+            <p>Je suis actuellement étudiante en <span>développement 
+             web</span> <br> et je cherche à améliorer mes Compétences en JavaScript,
+            HTML et CSS.</p> <br>
+         
+            <p>J'adore transformer mes idées en progets concrets <br> et 
+                expérimenter avec les nouvelles technologies
+            </p>
+
+            <button class="bouton2"><a href="">Télécharger mon CV</a></button>
+
+         </div>
+
+         <div class="image2"><img src="image.jpeg" alt=""></div>
+     </section>
+     
+     <section class="projet" id="Projets">
+        <h1>Mes projets</h1>
+
+
+         <div class="liste">
+            <div class="petit">
+                <img src="pro1.jpg" alt="">
+                <h4>portfolio</h4>
+                <p>portfolio déployer en ligne <br>
+                   
+                </p>
+                <button class="bouton2">
+                    <a href="">voir plus</a>
+                </button>
+            </div>
+
+            <div class="petit">
+                <img src="pro2.jpg" alt="">
+                <h4>portfolio</h4>
+                <p>création d'un site sur Gestion des tâches<br>
+                    
+                </p>
+                <button class="bouton2">
+                    <a href="">voir plus</a>
+                </button>
+            </div>
+
+            <div class="petit">
+                <img src="pro3.jpg" alt="">
+                <h4>portfolio</h4>
+                <p>un projet de restauration<br>
+                   
+                </p>
+                <button class="bouton2">
+                    <a href="">voir plus</a>
+                </button>
+            </div>
+
+            <div class="petit">
+                <img src="pro4.jpg" alt="">
+                <h4>portfolio</h4>
+                <p>création d'un site commercial <br>
+                   
+                </p>
+                <button class="bouton2">
+                    <a href="">voir plus</a>
+                </button>
+            </div>
+
+        </div>
+     </section>
+
+
+
+
+
+     <div class="skills" id="Compétences">
+          <h2>Mes Compétences</h2>
+
+          <div class="contenu">
+                
+            <div class="skills_box">
+            <h3>Soft Skills</h3>
+
+
+            <div class="skill">
+                    <h4>Gestion de projet</h4>
+                    <div class="pro_bar"><div class="pro" data-percent="80"></div></div>
+            </div>
+<br>
+<br>
+            <div class="skill">
+                <h4>Résolution de problème</h4>
+                <div class="pro_bar"><div class="pro" data-percent="90"></div></div>
+        </div>
+
+        <div class="skill">
+            <h4>Adaptabilité</h4>
+            <div class="pro_bar"><div class="pro" data-percent="50"></div></div>
+    </div>
+        </div>
+            
+
+
+
+
+
+
+
+        <div class="skills_box">
+            <h3>Hard Skills</h3>
+
+
+            <div class="skill">
+                    <h4>HTML</h4>
+                    <div class="pro_bar"><div class="pro" data-percent="80"></div></div>
+            </div>
+
+            <div class="skill">
+                <h4>CSS</h4>
+                <div class="pro_bar"><div class="pro" data-percent="50"></div></div>
+        </div>
+
+        <div class="skill">
+            <h4>JavaScript</h4>
+            <div class="pro_bar"><div class="pro" data-percent="60"></div></div>
+    </div>
+
+    <div class="skill">
+        <h4>VS Code</h4>
+        <div class="pro_bar"><div class="pro" data-percent="70"></div></div>
+</div>
+        </div>
+          </div>
+     </div>
+
+<section class="sec_contact" id="Contactes">
+     <h1 class="title">Contactez-nous</h1>
+     <div class="formulaire">
+       <form action="">
+          <input type="text" id="nom _prénom" placeholder="Entrez votre nom et prénom">
+          <input type="email"  id="email" placeholder="Entrez votre email">
+          <input type="text"  id="Objet" placeholder="Objet du Message">
+          <textarea id="message" cols="10" rows="10" placeholder="Message"></textarea>
+
+          <button  type="submit" onclick="return affichermessage()" class="bouton2"><a href="">Envoyer</a></button>
+          <p id="Mes" style="color: dodgerblue; font-size: 15px; margin: 20px 3px; text-align: center;"></p>
+       </form>
+        
+       
+
+       <div class="imagrs">
+        <img src="im.jpg" alt="">
+       </div>
+     </div>
+</section>
+
+<footer class="foot">
+        <div class="foot1">Designed by <span>Alphonsine</span> whit HTML CSS JS</div>
+        
+         <div class="foot2"> &copy;Tout dois réservé-2025</div>
+        
+</footer>
+     
+</body>
+</html>

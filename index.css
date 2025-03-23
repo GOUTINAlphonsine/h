@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik=wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
+    
+}
+a{
+    text-decoration: 0;
+    font-size: 15px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 40px;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: black;
+}
+
+header .name{
+    font-size: 30px;
+    color: white;
+}
+
+header .name span{
+  color: dodgerblue;
+}
+
+.lis {
+    display: flex;
+}
+
+.lis li{
+    
+  margin-left: 40px;
+  position: relative;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.lis li a{
+    transition: 0.5s;
+    color: white;
+}
+
+.lis li a:hover {
+   color:  dodgerblue;;
+   font-size: 17px;
+}
+
+
+
+.num{
+    font-size: 10px;
+    color:white;
+    background: linear-gradient(gray,dodgerblue);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.sec {
+   padding: 0 5%;
+   margin: 50px 0px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: calc(100vh - 200px);
+}
+
+.sec .p {
+   width: 55%;
+}
+
+.sec .image {
+    width: 45%;
+    height: 100%;
+}
+
+.sec .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sec .p h2 {
+    font-size: 20px;
+    margin-left: -9;
+    padding: 0;
+    font-weight: 500;
+}
+
+.sec .p h2 span {
+    color: dodgerblue;
+}
+
+.bouton{
+    margin-top: 30px;
+    border: none;
+    background: transparent;
+}
+
+.bouton a {
+    font-size: 20px;
+    color: white;
+    padding: 15px 20px;
+    background: linear-gradient(gray,dodgerblue);
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.sec2 {
+    padding: 0 5%;
+    margin: 50px 0px;
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 200px);
+ }
+
+ .sec2 .p2{
+    margin-top: 20px;
+ }
+
+ 
+.sec2 .p2 p span {
+    color: dodgerblue;
+}
+
+ .sec2 .image2 img {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    border: 2ps solid dodgerblue;
+    border-radius: 100%;
+    margin-right: -150px;
+}
+
+.bouton2{
+    margin-top: 30px;
+    border: none;
+    background: transparent;
+}
+
+.bouton2 a {
+    font-size: 20px;
+    color: white;
+    padding: 15px 20px;
+    background: linear-gradient(gray,dodgerblue);
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+h3{
+    margin-top: 100px;
+}
+
+.projet {
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+.projet h1 {
+    
+    
+    text-align: center;
+    color: dodgerblue;
+    margin-bottom: 30px;
+}
+
+.liste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0
+}
+.petit {
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(9, 9, 9, 0.1);
+    width: 270px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.petit:hover{
+    transform: translateY(-5px);
+}
+.petit img {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.skills{
+    padding: 80px 50px ;
+    text-align: center;
+
+}
+
+.skills h2 {
+    color: dodgerblue;
+    font-weight: 600px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.contenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+
+}
+
+.skills_box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 0 20px rgba(9, 9, 9, 0.1)
+}
+
+.skills_box h3 {
+    color: dodgerblue;
+    margin-bottom: 15px;
+
+}
+
+.skill {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.pro_bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.pro {
+    height: 100%;
+    background: dodgerblue;
+    width: 0;
+    transition: width 1.5s ease-in-out; 
+}
+
+.sec_contact h1 {
+    text-align: center;
+    color: dodgerblue;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.formulaire {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.formulaire form {
+      display: flex;
+      width: 40%;
+      flex-direction: column;
+}
+
+.formulaire form input, textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 30px;
+    border-color: whitesmoke;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    resize: none;
+    margin-left: 30px;
+    background-color: rgb(157, 182, 207);
+}
+
+.imagrs {
+    width: 50%;
+}
+
+.imagrs img {
+    width: 90%;
+    object-fit: cover;
+    border-radius: 40px;
+    height: 440px;
+    margin-bottom: 30px;
+   
+}
+
+
+
+
+.foot {
+    display: flex;
+     text-align: center;
+     margin-top: 100px;
+     justify-content: space-between;
+     background-color: black;
+     color: white;
+     padding: 20px;
+}
+
+.foot .foot1 span {
+    color: dodgerblue;
+}
+
+.small_menu {
+    display: none;
+    transition: 0.5s;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+header.scrolled {
+    background-color: dodgerblue;
+}
+
+header.scrolled .logo,
+header.scrolled .lis li a,
+header.scrolled .num {
+    color: white;
+}
+
+@media(max-width:628px) {
+     header .name {
+        font-size: 14px;
+     }
+
+     header .lis {
+           display: none;
+     }
+
+    .num {
+        display: none;
+    }
+
+    .sec {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    
+    .sec .p , .sec .image {
+        width: 100%;
+    }
+    .sec2 .p2 , .sec2 .image2 {
+        width: 100%;
+    }
+
+    .sec2 .image2 {
+        height: 350px;
+    }
+
+    .sec2 .p2 {
+        margin: 20px 0;
+    
+    }
+
+    .sec2 {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .sec2 .image2 img {
+         position: relative;
+         margin-top: 130px;
+         margin-left: 100px;
+         height: 200px;
+         width: 200px;
+    }
+
+    .projet .petit {
+        width: 100%;
+    }
+
+    .contenu {
+        flex-direction: column-reverse;
+        height: fit-content;
+        width: 100%;
+        overflow: hidden;
+    }
+
+   .contenu .skills_box {
+         width: 100%;
+         box-shadow:0 0 20px  rgba(9, 9, 9, 0.1);
+    }
+
+    .sec_contact .imagrs {
+        display: none;
+    }
+
+    .sec_contact form {
+        width: 90%;
+    }
+
+    .foot {
+         font-size: 10px;
+         padding: 10px;
+    }
+
+
+    .small_menu {
+        display: flex;
+        width: 20px;
+        height: 25px;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .small_menu span div {
+        height: 11px;
+        width: 11px;
+        background-color: dodgerblue;
+        border-radius: 6px;
+    }
+
+    .small_menu.active {
+        justify-content: center;
+        align-items: unset;
+    }
+    .small_menu.active span:nth-child(1) {
+            display: none;
+    }
+    .small_menu.active span {
+        display: flex;
+        flex-direction: unset;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .small_menu.active span div:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+
+    header .lis.small {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: rgba(243, 238, 238, 0.9);
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    header .lis.small li {
+        text-align: center;
+        margin: 15px 0;
+    }
+    header .lis.small li a {
+        color: dodgerblue;
+        font-size: 16px;
+    }
+    header .lis.small li a:hover {
+        color: blue;
+        font-size: 17px;
+        transition: 0.5s;
+    }
+}
+
